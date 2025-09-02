@@ -1,0 +1,119 @@
+/* === Global Styles === */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* lighter bg for expense tracker */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Container */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* === Form Styles === */
+form.main-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #722020;
+    font-size: 0.95em;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+button.btn-dark {
+    padding: 10px 15px;
+    font-size: 0.95em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button.btn-dark:hover {
+    background-color: #0056b3;
+}
+
+/* === Table Styles === */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-hover tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Alerts */
+.alert {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #ffc107;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .form-control,
+    button.btn-dark {
+        width: 100%;
+    }
+
+    .table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
